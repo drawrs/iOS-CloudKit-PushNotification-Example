@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iOS_CloudKit_PushNotification_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PS9-VZ-Q9w">
+                                <rect key="frame" x="54" y="422.5" width="306" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="306" id="6Kf-2K-LKM"/>
+                                    <constraint firstAttribute="height" constant="51" id="8Zy-cL-hGg"/>
+                                </constraints>
+                                <state key="normal" title="Subscribe"/>
+                                <connections>
+                                    <action selector="actionSubscribe:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HeC-2F-chh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AEq-nz-Aaf">
+                                <rect key="frame" x="54" y="493.5" width="306" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="0df-Y3-9h8"/>
+                                    <constraint firstAttribute="width" constant="306" id="keb-wD-fpL"/>
+                                </constraints>
+                                <state key="normal" title="Unsubscribe"/>
+                                <connections>
+                                    <action selector="actionUnsubscribe:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JSC-TD-Ucc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="PS9-VZ-Q9w" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="YBS-TI-Ns6"/>
+                            <constraint firstItem="PS9-VZ-Q9w" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ygh-4K-wQT"/>
+                            <constraint firstItem="AEq-nz-Aaf" firstAttribute="top" secondItem="PS9-VZ-Q9w" secondAttribute="bottom" constant="20" id="rTN-aH-a89"/>
+                            <constraint firstItem="AEq-nz-Aaf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tVb-WF-ytf"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-97" y="82"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
